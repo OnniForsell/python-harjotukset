@@ -1,7 +1,6 @@
 import random
 
 pituus = 0
-
 koodi_yks = 3
 koodi_kaks = 4
 
