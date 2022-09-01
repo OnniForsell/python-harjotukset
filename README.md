@@ -1,2 +1,2 @@
 # python-harjotukset
-Insinööri opintojeen python kurssin kotiläksyjä
+Insinööri opintojen python kurssin kotiläksyjä
