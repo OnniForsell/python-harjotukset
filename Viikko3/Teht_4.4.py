@@ -12,4 +12,4 @@ while arvaus != num:
 
     arvaus = int(input("Arvaa numero 1 ja 10 välillä: "))
 
-print(f"{arvaus} on oikea vastaus")
+print(f"{arvaus} on oikea vastaus!")
