@@ -2,7 +2,7 @@ import random
 
 sisalla = 0
 i = 0
-num = int(input("Kuinka monta pistettä pitäisi arvata?: "))
+num = int(input("Kuinka monta pistettä pitäisi arvata? "))
 
 while i <= num:
     x = random.randint(-1, 1)

@@ -13,5 +13,5 @@ while userInput != "":
     if int(userInput) > maxValue:
         maxValue = userInputInt
 
-    userInput = (input("Anna numero: "))
+    userInput = (input("Anna numero "))
 print(f"Pienin numero on {minvalue} ja suurin numero on {maxValue}")

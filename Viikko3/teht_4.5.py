@@ -2,7 +2,7 @@ nimi = "Python"
 salasana = "Rules"
 
 kenttaYks = input("Käyttäjänimi: ")
-kenttaKaks = input("Salasana: ")
+kenttaKaks = input("Salasana ")
 arvauksia = 1
 
 while arvauksia != 5:
