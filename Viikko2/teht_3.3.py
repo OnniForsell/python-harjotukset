@@ -17,6 +17,7 @@ if gender == "nainen":
         print("Hemoglobiiniarvo normaali")
     else:
         print("Hemoglobiiniarvo on korkea")
+        
 elif gender == "mies":
     hg_value = int(input("Hemoglobiinisi (g/l)? "))
     #Testataan miehen ohjearvoja vastaan

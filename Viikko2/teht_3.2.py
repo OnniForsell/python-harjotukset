@@ -1,4 +1,5 @@
 hyttiluokka = input("Syötä hyttiluokka A, B, C tai LUX: ")
+hyttiluokka = hyttiluokka.upper()
 
 if hyttiluokka == "A":
     print("A on ikkunallinen hytti autokannen yläpuolella.")
