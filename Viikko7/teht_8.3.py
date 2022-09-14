@@ -12,26 +12,17 @@ yhteys = mysql.connector.connect(
          password=salasana,
          autocommit=True
          )
+def haeKoodi(icao):
+    sql = "SELECT latitude_deg, longitude_deg FROM airport Where ident = '"+ icao +"'"
+    kursori = yhteys.cursor()
+    kursori.execute(sql)
+    tulos = kursori.fetchall()
+    return tulos
 
-#Määritellään kysely
-icao1 = input("Anna IACO koodi: ")
-sql1 = "SELECT latitude_deg, longitude_deg FROM airport Where ident = '"+ icao1 +"'"
-
-#Suoritetaan kysely
-kursori = yhteys.cursor()
-kursori.execute(sql1)
-
-#Haetaan ja käsitellään tulosrivit
-tulos1 = kursori.fetchall()
-
-icao2 = input("Anna IACO koodi: ")
-sql2 = "SELECT longitude_deg, latitude_deg FROM airport Where ident = '"+ icao2 +"'"
-
-#Suoritetaan kysely
-kursori = yhteys.cursor()
-kursori.execute(sql2)
-
-#Haetaan ja käsitellään tulosrivit
-tulos2 = kursori.fetchall()
-
-print(f"pituus asiemien välillä on {geodesic(tulos1, tulos2).km} km")
+eka=input("Anna ICAO-koodi: ")
+eka=eka.upper()
+haeKoodi(eka)
+toka=input("Anna ICAO-koodi: ")
+toka=toka.upper()
+haeKoodi(toka)
+print(f"pituus asemien välillä on {geodesic(haeKoodi(eka), haeKoodi(toka)).km} km")
