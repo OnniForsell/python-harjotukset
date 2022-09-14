@@ -1,4 +1,4 @@
-nimet = {"Erkki", "Eero", "Patrik", }
+nimet = set()
 
 while True:
     nimi = input("Anna Nimi: ")

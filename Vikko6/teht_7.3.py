@@ -4,16 +4,16 @@ def valitse():
     print("0 - Lopetus")
     valinta = -1
     while valinta < 0 or valinta > 2:
-        valinta = int(input("Valitse:"))
+        valinta = int(input("Valitse: "))
         return valinta
 
 def lisaaUusi(asema):
-    icao = input("Aseman ICAO koodi:")
-    nimi = input("Aseman nimi:")
+    icao = input("Aseman ICAO koodi: ")
+    nimi = input("Aseman nimi: ")
     asema[icao] = nimi
 
 def hae(asema):
-    icao = input("Aseman ICAO koodi:")
+    icao = input("Aseman ICAO koodi: ")
     if icao in asema:
         print(asema[icao])
     else:
