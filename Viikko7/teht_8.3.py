@@ -19,10 +19,9 @@ def haeKoodi(icao):
     tulos = kursori.fetchall()
     return tulos
 
-eka=input("Anna ICAO-koodi: ")
-eka=eka.upper()
+eka = input("Anna ICAO-koodi: ")
 haeKoodi(eka)
-toka=input("Anna ICAO-koodi: ")
-toka=toka.upper()
+toka = input("Anna ICAO-koodi: ")
+toka = toka.upper()
 haeKoodi(toka)
 print(f"pituus asemien välillä on {geodesic(haeKoodi(eka), haeKoodi(toka)).km} km")
