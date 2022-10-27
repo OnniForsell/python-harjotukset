@@ -15,7 +15,7 @@ class Car:
               f"Tämänhetkinen nopeus: {self.speed} km/h.")
 
     def accelerate(self, speed_change):
-        if 0 < self.speed + speed_change < self.max_speed:
+        if 0 < self.speed + speed_change <= self.max_speed:
             self.speed = self.speed + speed_change
         elif self.speed + speed_change <= 0:
             self.speed = 0
