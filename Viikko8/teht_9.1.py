@@ -49,6 +49,7 @@ while racing:
         car.drive(1)
         if car.dist_travelled >= 10000:
             racing = False
+            break
 
 for car in cars:
     print("--------------------------------------------------------------------------------------------\n")
