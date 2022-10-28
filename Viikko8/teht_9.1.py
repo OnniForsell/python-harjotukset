@@ -47,7 +47,7 @@ while racing:
     for car in cars:
         car.accelerate(random.randint(-10, 15))
         car.drive(1)
-        if car.dist_travelled >= 1000:
+        if car.dist_travelled >= 10000:
             racing = False
 
 for car in cars:
