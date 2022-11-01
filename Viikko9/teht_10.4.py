@@ -65,12 +65,12 @@ hour = 0
 cars = create_car()
 race = Race("Suuri Romuralli", 8000, cars)
 race.print_status()
+
 while not race.race_over():
     race.hour_passes()
     hour += 1
-    if hour % 10 == 0:
-        print(f"{hour} hours have passed.")
-        race.print_status()
+    print(f"{hour} hours have passed.")
+    race.print_status()
 
 print("\n")
 print(f"After {hour} hours the race is over! Here are the results:")
