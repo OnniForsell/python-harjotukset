@@ -55,21 +55,21 @@ class Car:
         self.hours = self.hours + hours
 
 
-def car_make():
+def create_car():
     cars = []
     for x in range(10):
         cars.append(Car("ABC-" + str(x + 1), random.randint(100, 200)))
     return cars
 
 hour = 0
-cars = car_make()
+cars = create_car()
 race = Race("Suuri Romuralli", 8000, cars)
 race.print_status()
-while race.race_over() == False:
+while not race.race_over():
     race.hour_passes()
     hour += 1
     if hour % 10 == 0:
-        print(f"{hour} hours has passed.")
+        print(f"{hour} hours have passed.")
         race.print_status()
 
 print("\n")
